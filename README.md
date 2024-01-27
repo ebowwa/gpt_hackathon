@@ -7,3 +7,4 @@ resemble
 twelvelabs
  > video vectors
 
+see ```_info``` for information on the hackathon
