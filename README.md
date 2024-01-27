@@ -23,4 +23,8 @@ src/api ~~ python flask backend
 
 next.js/typescript client side
 
+<<<<<<< HEAD
 MAXIMIZE MODULAR
+=======
+### MAXIMIZE MODULAR BUILDING
+>>>>>>> 561d550d5bb22ac0678362f8306e934318d8daaa
