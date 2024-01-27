@@ -1,3 +1,5 @@
+text to short clip[edits] generation
+
 openai documentation
  > plugin documentation/gpt actions
 
