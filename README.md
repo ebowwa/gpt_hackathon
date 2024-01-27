@@ -1,4 +1,8 @@
-text to short clip[edits] generation
+
+'no one like to read.. so heres our solution.. text to short clip[edits] generation
+see [https://x.com/julesterpak/status/1749205480931557710?s=20] on the importance of edits
+using mixtral(our llm conductor), `resemble` our voice, and twelve labs our content
+
 
 ## documentation
 openai documentation
