@@ -5,6 +5,7 @@ openai documentation
 
 resemble
  > tts
+ > https://docs.app.resemble.ai/docs/client_libraries/python/
 
 twelvelabs
  > video vectors
