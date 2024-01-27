@@ -1,4 +1,5 @@
-# text to short form content like tiktok, youtube shorts, instagram reels
+# text to short form content 
+like tiktok, youtube shorts, instagram reels
 
 ## problem
 most people don't like to read, but everyone loves content. so heres our solution.. text to short clip[edits] generation
