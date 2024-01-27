@@ -21,10 +21,11 @@ openai documentation
 
 resemble
  > tts
- > https://docs.app.resemble.ai/docs/client_libraries/python/
+   https://docs.app.resemble.ai/docs/client_libraries/python/
 
 twelvelabs
  > video vectors
+   https://docs.twelvelabs.io/docs/introduction
 
 see ```_info``` for information on the hackathon
 
