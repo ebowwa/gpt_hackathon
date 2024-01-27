@@ -1,8 +1,14 @@
+# text to short form content like tiktok, youtube shorts, instagram reels
 
-'no one like to read.. so heres our solution.. text to short clip[edits] generation
+## problem
+most people don't like to read, but everyone loves content. so heres our solution.. text to short clip[edits] generation
 see [https://x.com/julesterpak/status/1749205480931557710?s=20] on the importance of edits
+
+## how
 using mixtral(our llm conductor), `resemble` our voice, and twelve labs our content
 
+## challenge
+how to monetize??
 
 ## documentation
 openai documentation
