@@ -44,3 +44,7 @@ shadcn/tailwind
 
 
 ### MAXIMIZE MODULAR BUILDING
+
+## UI ~ json & someguy
+## resemble ~ someguy
+## twelvelabs ~ deepanshu
