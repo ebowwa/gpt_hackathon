@@ -11,11 +11,11 @@ twelvelabs
 
 see ```_info``` for information on the hackathon
 
-next.js/flask
-
 shadcn/tailwind
 
 ```
 npm install
 npm run build
 ```
+src/api ~~ python flask backend
+next.js/typescript client side
