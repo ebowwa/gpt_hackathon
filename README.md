@@ -35,7 +35,7 @@ npm install
 npm run build
 ```
 
-## built on
+## stack
 src/api ~~ python flask backend
 
 next.js/typescript client side
