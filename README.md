@@ -14,3 +14,8 @@ see ```_info``` for information on the hackathon
 next.js/flask
 
 shadcn/tailwind
+
+```
+npm install
+npm run build
+```
