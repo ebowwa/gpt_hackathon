@@ -13,7 +13,11 @@ how to monetize??
 
 ## documentation
 openai documentation
- > plugin documentation/gpt actions
+ > plugin documentation
+   https://platform.openai.com/docs/plugins/introduction
+
+ > /gpt actions
+   https://platform.openai.com/docs/actions/introduction
 
 resemble
  > tts
