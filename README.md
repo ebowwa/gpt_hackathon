@@ -1,5 +1,6 @@
 text to short clip[edits] generation
 
+## documentation
 openai documentation
  > plugin documentation/gpt actions
 
@@ -12,16 +13,16 @@ twelvelabs
 
 see ```_info``` for information on the hackathon
 
-shadcn/tailwind
-
+## build
 ```
 npm install
 npm run build
 ```
+
+## 
 src/api ~~ python flask backend
-
-
 next.js/typescript client side
+shadcn/tailwind
 
 
 ### MAXIMIZE MODULAR BUILDING
