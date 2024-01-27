@@ -12,4 +12,5 @@ twelvelabs
 see ```_info``` for information on the hackathon
 
 next.js/flask
+
 shadcn/tailwind
