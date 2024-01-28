@@ -61,8 +61,8 @@ def run_example(
 # Example usage
 if __name__ == "__main__":
     run_example(
-        project_uuid="your_project_uuid",
-        voice_uuid="your_voice_uuid",
+        project_uuid="0448305f",
+        voice_uuid="d3e61caf",
         title="Your Title",
         body="Your Body Text",
         public=False,
