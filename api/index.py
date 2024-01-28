@@ -20,9 +20,15 @@ def get_chat_response():
         return jsonify({"response": response}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-# Search fro relevant clips from twelvelabs
+      
+# TODO:        
+# Search for relevant clips for twelvelabs
+# - track the added content to twelvelabs uuid all videos with url to extract afterward.
 # API CALLS TO MISTRAL to narrate clips/content
-# API calls to resemble to generate audio on the Mistral calls
+# - prompting mistral for (potential various styles):
+# 
+# API calls to resemble to generate audio on the narration
+# ffmpeg to stitch it all together
 # Share Download/Preview 
 
 
