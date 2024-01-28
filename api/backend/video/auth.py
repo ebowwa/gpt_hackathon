@@ -5,7 +5,7 @@ import os
 
 def get_headers(api_key=None):
     if api_key is None:
-        api_key = os.environ.get('twelvelabs_api_key', 'YOUR_API_KEY_HERE')
+        api_key = os.environ.get('x-api-key', 'x_api_key')
 
     headers = {
         "x-api-key": api_key
@@ -13,4 +13,5 @@ def get_headers(api_key=None):
     return headers
   
 if __name__ == "__main__":
+  
   print("Task Complete")

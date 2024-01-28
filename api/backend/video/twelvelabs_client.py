@@ -1,24 +1,20 @@
 import os
+from search import search
 from auth import get_headers
-import search
 
-def main():
-    # Ensure the necessary environment variables are set
-    required_env_vars = ['API_URL', 'API_KEY']
-    for var in required_env_vars:
-        assert os.getenv(var), f"{var} environment variable is not set."
+# Set up the environment variables for API URL and Index ID
+API_URL = os.getenv("API_URL", "https://api.twelvelabs.io/v1.1")  # Default API URL as an example
+INDEX_ID = "<YOUR_INDEX_ID>"  # Set your Index ID here
 
-    # Get headers using auth.py
-    headers = get_headers()
+# Get the headers using the auth module
+headers = get_headers()
 
-    # Conduct a search using search.py, but modify search.py to accept headers as an argument
-    # Assuming search.py has a function named 'perform_search' that accepts headers as a parameter
-    # Note: The user will need to modify search.py to include a 'perform_search' function or similar
-    search_results = search.perform_search(headers)
+# Define the query and search options
+query = "car accidents"
+search_options = ["visual"]
 
-    # Process and display search results
-    print("Search Results:")
-    print(search_results)
+# Call the search function from refactored_search.py
+search(API_URL, headers, INDEX_ID, query, search_options)
 
 if __name__ == "__main__":
     main()
