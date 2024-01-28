@@ -53,6 +53,3 @@ We utilize several AI services:
 run `pnpm run next-dev`
 
 
-##
-
-`we make HTTP requests from the Next.js app to the Flask backend to fetch the user input then we perform our magic and output the finished short.`
