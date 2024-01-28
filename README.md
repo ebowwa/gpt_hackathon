@@ -44,8 +44,6 @@ shadcn/tailwind
 
 # builders
 
-### MAXIMIZE MODULAR BUILDING
-
 ## UI ~ json & skyascii
 
 ## resemble ~ someguy
