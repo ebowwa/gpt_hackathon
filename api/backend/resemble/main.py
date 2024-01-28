@@ -1,42 +1,6 @@
 from resemble import Resemble
 import os
-import argparse
-from auth import *
-
-
-def initialize_resemble_client():
-    try:
-        # Attempt to retrieve the value of the environment variable
-        resemble_api_key = os.environ("RESEMBLE_API_KEY")
-
-        Resemble.api_key(resemble_api_key)
-    except KeyError:
-        # If the environment variable is not found, raise an error
-        raise EnvironmentError(
-            f"The 'RESEMBLE_API_KEY' environment variable is not set"
-        )
-
-
-def run_example(arguments):
-    initialize_resemble_client()
-
-    project_uuid = arguments.get("project_uuid")
-    voice_uuid = arguments.get("voice_uuid")
-    title = arguments.get("title")
-    body = arguments.get("body")
-    public = arguments.get("public", False)
-    archived = arguments.get("archived", False)
-
-    create_audio_clip(
-        project_uuid=project_uuid,
-        title=title,
-        body=body,
-        voice_uuid=voice_uuid,
-        is_public=public,
-        is_archived=archived,
-    )
-    # Parse the command-line arguments
-
+from auth import initialize_resemble_client
 
 def create_audio_clip(
     project_uuid: str,
@@ -49,9 +13,7 @@ def create_audio_clip(
     # Not yet implemented
     print(f"Submitting request to Resemble to create audio clip: content: {body}")
 
-    # Make request to the API,
-    # This request will execute synchronously
-
+    # Make request to the API
     response = Resemble.v2.clips.create_sync(
         project_uuid,
         voice_uuid,
@@ -78,42 +40,31 @@ def create_audio_clip(
         print("Response was unsuccessful")
         print(response)
 
+def run_example(
+    project_uuid: str,
+    voice_uuid: str,
+    title: str,
+    body: str,
+    public: bool = False,
+    archived: bool = False
+):
+    initialize_resemble_client()
+    create_audio_clip(
+        project_uuid=project_uuid,
+        title=title,
+        body=body,
+        voice_uuid=voice_uuid,
+        is_public=public,
+        is_archived=archived,
+    )
 
-parser = argparse.ArgumentParser(
-    description="A script that creates static audio content using Resemble AI"
-)
-
-# Add option flags to the parser
-parser.add_argument(
-    "--project_uuid", required=True, help="Project UUID to store this clip under"
-)
-parser.add_argument(
-    "--voice_uuid", required=True, help="Voice UUID to use for this clip content"
-)
-parser.add_argument("--title", required=True, help="The title of the clip")
-parser.add_argument(
-    "--body",
-    required=True,
-    help="The text to synthesize audio content with, can be SSML or plain text",
-)
-parser.add_argument(
-    "--public", action="store_true", help="Set to make public (default: False)"
-)
-parser.add_argument(
-    "--archived", action="store_true", help="Set to archive (default: False)"
-)
-
-
-args = parser.parse_args()
-
-# Create a dictionary of arguments
-arguments = {
-    "project_uuid": args.project_uuid,
-    "voice_uuid": args.voice_uuid,
-    "title": args.title,
-    "body": args.body,
-    "public": args.public,
-    "archived": args.archived,
-}
+# Example usage
 if __name__ == "__main__":
-    run_example(arguments)
+    run_example(
+        project_uuid="your_project_uuid",
+        voice_uuid="your_voice_uuid",
+        title="Your Title",
+        body="Your Body Text",
+        public=False,
+        archived=False
+    )
