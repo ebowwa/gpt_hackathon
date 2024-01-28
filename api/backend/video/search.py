@@ -1,5 +1,3 @@
-python
-Copy code
 import requests
 import os
 from pprint import pprint
