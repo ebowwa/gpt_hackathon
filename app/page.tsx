@@ -22,7 +22,7 @@ export default function Component() {
       console.error('Error:', error);
     }
   };
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     setPrompt(e.target.value);
   };
 
