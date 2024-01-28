@@ -5,6 +5,7 @@
  */
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Component() {
   return (
@@ -19,7 +20,9 @@ export default function Component() {
       </div>
       <div className="flex w-full max-w-md items-center space-x-2 mt-8">
         <Input placeholder="Enter your prompt here" type="text" />
-        <Button type="submit">Submit</Button>
+        <Link href="/result">
+          <Button type="submit">Submit</Button>
+        </Link>
       </div>
     </main>
   );
