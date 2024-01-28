@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
-from backend.inference.client import OpenAIClient
-from backend.resemble.speech import create_audio_clip
+from _backend.inference.client import OpenAIClient
+from _backend.resemble.speech import create_audio_clip
 
 app = Flask(__name__)
 
