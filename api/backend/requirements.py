@@ -6,3 +6,4 @@ openai
 pprint3x
 requests
 flask
+agentops

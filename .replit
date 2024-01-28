@@ -1,5 +1,15 @@
 run = "cowsay Configure me!"
 modules = ["python-3.10:v25-20230920-d4ad2e4"]
+entrypoint = "index.js"
+hidden = [".config", "package-lock.json"]
 
 [nix]
 channel = "stable-23_11"
+
+[unitTest]
+language = "nodejs"
+
+[deployment]
+run = ["node", "index.js"]
+deploymentTarget = "cloudrun"
+ignorePorts = false
