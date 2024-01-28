@@ -4,7 +4,7 @@ from search import search
 from auth import get_headers
 from list_indexes import list_indexes
 
-def main():
+def exeTwelvelabs():
     API_URL = os.getenv("API_URL", "https://api.twelvelabs.io/v1.1")
     INDEX_ID = "<YOUR_INDEX_ID>"
 
@@ -21,4 +21,4 @@ def main():
     print("Search Results:", search_results)
 
 if __name__ == "__main__":
-    main()
+  exeTwelvelabs()
