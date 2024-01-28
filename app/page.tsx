@@ -1,28 +1,52 @@
 "use client";
-import { useState } from 'react';
+import React, { useState } from 'react';
+import useSWR, { mutate } from 'swr';
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+const fetcher = async (url, data) => {
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (!response.ok) {
+    const error = new Error('An error occurred while fetching the data.');
+    error.info = await response.json();
+    error.status = response.status;
+    throw error;
+  }
+
+  return response.json();
+};
+
 export default function Component() {
   const [prompt, setPrompt] = useState('');
 
-  const handleSubmit = async () => {
+  // SWR key
+  const swrKey = ['/process_content', { inquiry: prompt }];
+
+  // SWR hook for revalidation
+  const { data, error } = useSWR(swrKey, fetcher, {
+    revalidateOnFocus: false,
+    shouldRetryOnError: false,
+    dedupingInterval: 2000,
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     try {
-      const response = await fetch('/process_content', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ inquiry: prompt }),
-      });
-      const data = await response.json();
-      console.log(data); // You can handle the response here, such as showing a download link
+      await mutate(swrKey, () => fetcher(swrKey[0], swrKey[1]), false);
     } catch (error) {
       console.error('Error:', error);
     }
   };
-  const handleChange = (e:any) => {
+
+  const handleChange = (e) => {
     setPrompt(e.target.value);
   };
 
