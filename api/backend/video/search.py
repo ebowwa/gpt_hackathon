@@ -1,4 +1,3 @@
-
 import requests
 
 def search(api_url, headers, index_id, query, search_options):
