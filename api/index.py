@@ -5,7 +5,19 @@ from backend.resemble.speech import create_audio_clip
 app = Flask(__name__)
 
 client = OpenAIClient(api_key="null", base_url="https://dev-hub.agentartificial.com")
-# collect user input 
+# collect user input & query metaphor 
+@app.route('/query', methods=['GET'])
+def get_query():
+    query = request.args.get('query')
+    response = client.get_chat_response(query)
+    return jsonify(response)
+
+@app.route('/get_youtube_video', methods=['POST'])
+def getContentQuery():
+  return 
+
+
+  
 
 @app.route('/get_chat_response', methods=['POST'])
 def get_chat_response():
