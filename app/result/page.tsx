@@ -1,8 +1,3 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/zToJzVwMCfW
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -12,11 +7,9 @@ export default function Component() {
       <header className="flex justify-center items-center px-4 py-2 border-b">
         <Link className="flex items-center gap-2" href="#">
           <YoutubeIcon className="h-6 w-6 text-red-500" />{" "}
-          {/* Change text color here */}
           <span className="text-lg font-semibold text-red-500">
             YouTube-Short-inator
           </span>{" "}
-          {/* Change text color here */}
         </Link>
       </header>
       <main className="flex-1 p-4 md:p-6">
