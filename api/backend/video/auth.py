@@ -5,7 +5,7 @@ import os
 
 def get_headers(api_key=None):
     if api_key is None:
-        api_key = os.environ.get('API_KEY', 'YOUR_API_KEY_HERE')
+        api_key = os.environ.get('twelvelabs_api_key', 'YOUR_API_KEY_HERE')
 
     headers = {
         "x-api-key": api_key
