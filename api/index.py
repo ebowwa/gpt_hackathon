@@ -21,7 +21,7 @@ def get_chat_response():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
       
-# TODO:        
+# TODO (backend edition):        
 # Search for relevant clips for twelvelabs
 # - track the added content to twelvelabs uuid all videos with url to extract afterward.
 # API CALLS TO MISTRAL to narrate clips/content
@@ -30,6 +30,7 @@ def get_chat_response():
 # API calls to resemble to generate audio on the narration
 # ffmpeg to stitch it all together
 # Share Download/Preview 
+# update the OPENAPI spec for gpts access to the workflow
 
 
 if __name__ == "__main__":
