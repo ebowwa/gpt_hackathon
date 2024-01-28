@@ -45,6 +45,5 @@ We utilize several AI services:
 ## Team
 
 - UI: Skyascii and Jason
-- Resemble: SomeGuy
-- TwelveLabs: Deepanshu
-- LLM: Ebowwa
+- Resemble: SomeGuy, ebowwa
+- TwelveLabs: ebowwa, Deepanshu
