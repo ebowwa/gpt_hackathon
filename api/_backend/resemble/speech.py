@@ -1,6 +1,6 @@
 from resemble import Resemble
 import os
-from auth import initialize_resemble_client
+from .auth import initialize_resemble_client
 
 def create_audio_clip(
     project_uuid: str,
