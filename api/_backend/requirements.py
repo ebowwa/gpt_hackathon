@@ -7,7 +7,7 @@ pprint3x
 requests
 flask
 agentops
-certifi=2023.11.17 
-charset-normalizer=3.3.2
-idna=3.6
+certifi==2023.11.17 
+charset-normalizer==3.3.2
+idna==3.6
 urllib3==2.1.0
