@@ -1,55 +1,50 @@
-# text to short form content 
-democratizing ai through the likes of distributed content, i.e. tiktok, youtube shorts, instagram reels, etc.
+# Text to Short Form Video Content
 
-## problem
-most people don't like to read, but everyone loves content. so heres our solution.. text to short clip[edits] generation
-see [https://x.com/julesterpak/status/1749205480931557710?s=20] on the importance of edits
+> **AKA Youtube-Short-inator**
 
-## how
-using `mistral`(our llm conductor), `resemble` our voice, and `twelvelabs` our content
+## Overview
 
-## challenge
-how to monetize??
+We aim to democratize AI by converting long form text into short form video content, like TikTok, YouTube Shorts, and Instagram Reels.
 
-## documentation
-openai documentation
- > plugin documentation
-   https://platform.openai.com/docs/plugins/introduction
+People often don't have time to read long articles and prefer consuming content in short video format. We want to leverage AI to automatically convert text into short, engaging videos.
+Solution
 
- > /gpt actions
-   https://platform.openai.com/docs/actions/introduction
+Using natural language models like Anthropic's Claude, voice synthesis with Resemble AI, and video generation from Twelve Labs, we can automatically convert text into short video clips.
 
-resemble
- > tts
-   https://docs.app.resemble.ai/docs/client_libraries/python/
+> see [https://x.com/julesterpak/status/1749205480931557710?s=20] on the importance of edits
 
-twelvelabs
- > video vectors
-   https://docs.twelvelabs.io/docs/introduction
+## Key aspects
 
-see ```_info``` for information on the hackathon
+- Natural language model summarizes and edits text into scripts optimized for short video
+- Voice synthesis API converts scripts into realistic voice narration  
+- Video generation API creates short video clips from images and voiceover
 
-## build
-```
-npm install
-npm run build
-```
+## Challenge
 
-## stack
-src/api ~~ python flask backend
+The main challenge is monetizing the service. Possible options:
 
-next.js/typescript client side
+- Charge per generated video
+- Offer freemium model with advanced features for pay
+- Build audience then monetize through advertising
 
-shadcn/tailwind
+## Tools
 
-# builders
+We utilize several AI services:
 
-## UI ~ json & skyascii
+- Mistral
+- [OpenAI documentation](https://platform.openai.com/docs/plugins/introduction) - Natural language model
+- [Resemble AI](https://docs.app.resemble.ai/docs/client_libraries/python/) - Voice synthesis API  
+- [Twelve Labs](https://docs.twelvelabs.io/docs/introduction) - Video generation API
 
-## resemble ~ someguy
+## Tech Stack
 
-## twelvelabs ~ deepanshu
+- Python Flask backend
+- Next.js frontend
+- Tailwind CSS
 
-## llm ~ ebowwa
+## Team
 
-
+- UI: Skyascii and Jason
+- Resemble: SomeGuy
+- TwelveLabs: Deepanshu
+- LLM: Ebowwa
