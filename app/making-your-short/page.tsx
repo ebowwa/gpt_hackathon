@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout } from "./layout";
+// import { Layout } from "./layout";
 import { Button } from '@/components/ui/button';
 import { IconFilm } from 'lucide-react';
 
