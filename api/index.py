@@ -25,7 +25,7 @@ def get_chat_response():
 # Search for relevant clips for twelvelabs
 # - track the added content to twelvelabs uuid all videos with url to extract afterward.
 # API CALLS TO MISTRAL to narrate clips/content
-# - prompting mistral for (potential various styles):
+# - prompting mistral for (potential various styles) narration:
 # 
 # API calls to resemble to generate audio on the narration
 # ffmpeg to stitch it all together
