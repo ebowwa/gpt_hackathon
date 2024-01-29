@@ -48,8 +48,11 @@ We utilize several AI services:
 - Resemble: SomeGuy, ebowwa
 - TwelveLabs: ebowwa, Deepanshu
 
-## 
 
-run `pnpm run next-dev`
+#
+
+![Screenshot_2024-01-27_at_5 37 16_PM](https://github.com/ebowwa/gpt_hackathon/assets/81942069/e1c06b3c-ad70-4963-988c-a04725d519b5)
 
 
+
+![image-1](https://github.com/ebowwa/gpt_hackathon/assets/81942069/8fe48957-79c6-4b59-81f7-51e6899207ff)
