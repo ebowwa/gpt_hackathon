@@ -1,2 +1,2 @@
-pip install -r api/backend/requirements.py
+pip install -r api/requirements.py
 
