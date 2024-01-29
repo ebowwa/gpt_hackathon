@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { ContentProcessor } from "@/components/contentProcessor"; 
+import  ContentProcessor from "@/components/contentProcessor";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
