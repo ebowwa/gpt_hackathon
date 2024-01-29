@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { ContentProcessor } from './path/to/ContentProcessor'; // Adjust the path as needed
+import { ContentProcessor } from '../../components/ContentProcessor'; // Adjust the path as needed
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
